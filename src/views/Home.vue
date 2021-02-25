@@ -1,12 +1,21 @@
 <template>
 <div id="home">
-  <h1>Hola!</h1>
+  <Header />
 </div>
 </template>
 
 <script>
+import Header from '../components/Header';
+import Carousel from '../components/Carousel';
+import Loader from '../components/Loader';
+
 export default {
-  name: "Home"
+  name: "Home",
+  component: {
+    Header,
+    Carousel,
+    Loader,
+  }
   }
   
 </script>

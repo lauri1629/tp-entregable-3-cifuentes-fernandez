@@ -1,13 +1,12 @@
-<template>
+<template lang="html">
   <div id="nav">
-    <ul>
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="#games">Games</router-link></li>
-      <li><router-link to="#about">About us</router-link></li>
-      <li><router-link to="#worlds">Worlds</router-link></li>
+    <ul class="container">
+      <li><router-link to="/Home">Home</router-link></li>
+      <li><router-link to="">Games</router-link></li>
+      <li><router-link to="">About us</router-link></li>
+      <li><router-link to="">Worlds</router-link></li>
       <li><router-link to="/ChampionList">Tabla</router-link></li>
-      <li><router-link to="#contact">Contacto</router-link></li>
-     
+      <li><router-link to="">Contacto</router-link></li>
     </ul>
   </div>
 </template>
@@ -17,4 +16,12 @@ export default {};
 </script>
 
 <style>
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 </style>
+  
+
